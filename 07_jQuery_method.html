@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="js/07_jQuery_method.js"></script>
+    <style>
+        .myStyle {
+            background-color: bisque;
+            color: cornflowerblue;
+            font-size: 30pt;
+        }
+
+        .divStyle{
+            width : 300px ;
+            height: 200px ;
+            background-color: darkseagreen;
+        }
+        /*myStyle이란 클래스를 가지면 이런 작업을 수행해라.*/
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>홍길동</li>
+        <li>신사임당</li>
+        <li>강감찬</li>
+        <li>이순신</li>
+<!--     onmouseover:   마우스가 이 영역에 올라가면 작동된다.-->
+    </ul>
+    <div id="myDiv"></div>
+    <input type="button" value="글자를 넣어봅시다~" onclick="insert_text()">
+<!--버튼을 누르면 위의 div영역에 글자를 넣도록 하겠다.-->
+
+    <div id="deleteDiv" class="divStyle">
+        <h1>여기는 H1</h1>
+        <h1>여기는 H2</h1>
+    </div>
+    <input type="button" value="DIV를 지워봅시다!" onclick="delete_div()">
+    <input type="button" value="목록을 하나 추가해요!!" onclick="add_list()">
+
+</body>
+</html>

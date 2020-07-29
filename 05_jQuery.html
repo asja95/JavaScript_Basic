@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="js/05_jQuery.js"></script>
+<!--    반드시 위쪽에 CDN방식으로 jQuery 라이브러리를 불러온다. 내가 저 라이브러리를 쓸 거니까 먼저 수행하도록.-->
+<!--    저 주소에서 그 때 그 때 받아와서 처리하도록 해준다.-->
+</head>
+<body>
+    <h1>jQuery 연습입니다.</h1>
+    <div>
+        <ul>
+            <li class="region">서울</li>
+            <li id="haha">인천</li>
+            <li class="region">강원</li>
+        </ul>
+        <ol>
+            <li id="hong">홍길동</li>
+            <li>신사임당</li>
+            <li>강감찬</li>
+        </ol>
+    </div>
+    <input type="button" value="눌러보지그래?" onclick="my_func()">
+</body>
+</html>
+
+<!--참고로, id값은 항상 유니크해야 한다.-->
+<!--그러나 class는 중복된 값을 가질 수 있다.-->
